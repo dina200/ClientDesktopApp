@@ -84,10 +84,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Client\CManufacture.cs" />
     <Compile Include="Client\Converter.cs" />
     <Compile Include="Client\IConverter.cs" />
     <Compile Include="Client\CType.cs" />
     <Compile Include="Client\ITransportable.cs" />
+    <Compile Include="Client\CMaterial.cs" />
     <Compile Include="Client\Transportable.cs" />
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
@@ -95,6 +97,8 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\ModelManufacture.cs" />
+    <Compile Include="Model\ModelMaterial.cs" />
     <Compile Include="Model\ModelType.cs" />
     <Compile Include="Model\IBaseModel.cs" />
     <Compile Include="Presenter\IPresenter.cs" />

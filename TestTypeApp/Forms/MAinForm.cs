@@ -28,9 +28,6 @@ namespace TestTypeApp
             //    TestRestClient client = new TestRestClient();
             //    MessageBox.Show(client.DbTest("some text"));
             //}
-
-
-
         }
 
         private void typeSetupControl1_Load(object sender, EventArgs e)

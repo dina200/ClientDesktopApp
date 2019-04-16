@@ -2,14 +2,16 @@
 
 namespace TestTypeApp.Client
 {
-   public class CType : Transportable<TypeRef.type>, INotifyPropertyChanged 
+    class CManufacture : Transportable<ManufactureRef.manufacture>, INotifyPropertyChanged
     {
-        public CType():base(new TypeRef.type())
-        {  }
+        public event PropertyChangedEventHandler PropertyChanged;
 
-        public CType(TypeRef.type type):base(type)
-        {  }
+        public CManufacture() : base(new ManufactureRef.manufacture())
+        { }
 
+        public CManufacture(ManufactureRef.manufacture dto) : base(dto)
+        { }
+             
         public int Id
         {
             get { return dto.id; }
@@ -19,7 +21,5 @@ namespace TestTypeApp.Client
             get { return dto.name; }
             set { dto.name = value; PropertyChanged(this,new PropertyChangedEventArgs("Name")); }
         }
-   
-        public event PropertyChangedEventHandler PropertyChanged;
     }
 }
