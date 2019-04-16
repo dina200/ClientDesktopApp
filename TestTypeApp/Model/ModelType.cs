@@ -11,13 +11,13 @@ namespace TestTypeApp
 {
     class ModelType : IBaseModel<CType>
     {
-        TypeRef.TestServiceClient service;
+        TypeRef.TypeServiceClient service;
         BindingList<CType> types;
         List<CType> toSave;
         List<int> toDelete;
         TestTypeApp.Client.Converter<TypeRef.type, CType> converter;
 
-        public ModelType(TypeRef.TestServiceClient service)
+        public ModelType(TypeRef.TypeServiceClient service)
         {
             this.service = service;
             types = new BindingList<CType>();

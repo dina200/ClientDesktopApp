@@ -19,10 +19,10 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8080/socks-web/soap/testservice?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8080/socks-web/soap/type?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="TestService.wsdl" MetadataType="Wsdl" ID="74a781e3-f476-404b-b292-a77649efb5c9" SourceId="1" SourceUrl="http://localhost:8080/socks-web/soap/testservice?wsdl" />
+    <MetadataFile FileName="TypeService.wsdl" MetadataType="Wsdl" ID="f8824e8e-15fe-45f8-a474-bd001b113784" SourceId="1" SourceUrl="http://localhost:8080/socks-web/soap/type?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
